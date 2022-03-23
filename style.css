@@ -8,17 +8,28 @@
 }
 
 header {
-    font-family: 'Shrikhand', cursive;
+    font-family: "Shrikhand", cursive;
     text-align: center;
-    box-shadow: 0px 3px 5px  lightgrey;
+    box-shadow: 0px 5px 5px  rgb(207, 206, 206);
     padding: 3px;
+    position: relative;
 }
 
 body {
     margin: 0px;
+    font-family: "Roboto", sans-serif;
 }
 
-h2, 
-p {
-    font-family: 'Roboto', sans-serif;
+main .city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 240, 240) ;
+    text-align: center;
+}
+
+main .city i, 
+h2 {
+    margin: 30px 5px;
+    font-size:25px;
 }
