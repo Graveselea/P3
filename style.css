@@ -15,10 +15,16 @@ header {
     position: relative;
 }
 
+header h1 {
+    margin : 10px 0;
+}
+
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
 }
+
+/* city */
 
 main .city {
     display: flex;
@@ -29,7 +35,39 @@ main .city {
 }
 
 main .city i, 
-h2 {
-    margin: 30px 5px;
-    font-size:25px;
+main .city h2 {
+    margin: 20px 15px;
+    font-size:20px;
+}
+
+/* explorer */
+
+.explorer {
+    text-align: center;
+}
+
+.explorer h2 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.explorer p {
+    font-size: 18px;
+}
+
+.explorer button {
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 63%); 
+    color: white;
+    font-size: 15px ;
+    padding: 15px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 5px lightgrey;
+    transition: all 200ms;
+    border: none;
+    margin-top: 15px;
+}
+
+.explorer button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
 }
