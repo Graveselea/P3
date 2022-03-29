@@ -1,16 +1,16 @@
 {
   "name": "p3",
   "version": "1.0.0",
-  "description": "mon projet ohmyfood",
+  "description": "projet ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss:style.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Graveselea/P3.git"
   },
-  "author": "elea graves",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Graveselea/P3/issues"
