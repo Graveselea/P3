@@ -1,6 +1,7 @@
 
 @import "./utils/mixins";
 @import "./utils/variables";
+@import "./utils//functions";
 
 @import "./base/base";
 @import "./base/font";
@@ -8,6 +9,10 @@
 @import "./layout/city";
 @import "./layout/explorer";
 @import "./layout/fonctionement";
+@import "./layout/restaurant";
+@import "./layout/footer";
+@import "./Pages/subpages";
+
 
 
 

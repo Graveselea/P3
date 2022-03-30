@@ -3,12 +3,14 @@
     counter-reset: steps;
     ol {
         display: flex;
+        padding: 0;
         @media(max-width:$tablet){
         flex-direction: column; 
+        
         }
     }
     li {
-        background-color: rgb(234, 234, 234) ;
+        background-color: $color-grey ;
         padding: 30px;
         flex-grow: 1;
         margin: 20px 30px 0 0;
@@ -17,8 +19,6 @@
         list-style-type: none;
         position: relative;
         &:hover {
-            opacity: 0.9;
-            box-shadow: 0px 4px 5px grey;   
             @include zoom2;    
             background-color: $color-primary;
         } 
@@ -32,12 +32,14 @@
             border-radius: 50%;
             display: grid;
             place-items: center;
+            margin: 0;
             position: absolute;
-            bottom: 20px;
-            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -4%;
         }
     i.fa-solid {
-        color: grey;
+        color: $color-greydark;
         margin: 0 30px 0 20px;
         font-size: 20px;
         &:hover {

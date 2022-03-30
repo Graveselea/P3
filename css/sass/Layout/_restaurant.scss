@@ -1,0 +1,39 @@
+.restaurant {
+    background-color: $color-greylight;
+
+    .restaurant_card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; 
+               
+        a {
+            text-decoration: none;
+            color: $color-black;
+        }
+    }
+
+    .card {
+        background-color: $color-white;
+        flex-grow: 1;
+        min-width: 40%;
+        border-radius: 15px;
+        transition-duration: 0.3s;
+
+        @include base-shadow ;
+        &:hover {
+            @include zoom2;
+        }
+
+        img {
+            width: 100%;
+            min-width: 480px;
+            height: 200px;
+            object-fit: cover;   
+            border-radius: 15px 15px 0 0;
+            object-position:center;
+        }
+    }
+}
+
+
+
