@@ -1,15 +1,34 @@
 .restaurant {
     background-color: $color-greylight;
 
+    h3,
+    p {
+        padding-left: 20px;
+    }
+
+    p {
+        margin : -15px 0 15px 0;
+    }
+
     .restaurant_card {
         display: flex;
         flex-wrap: wrap;
         gap: 20px; 
+        padding-bottom: 40px;
+        position: relative;
                
         a {
             text-decoration: none;
-            color: $color-black;
+            color: $color-black;        
+            i.fa-heart {
+            position: absolute;
+            margin-top: -50px;
+            right: 19px;
+            font-size: 25px;
         }
+        }
+
+
     }
 
     .card {
@@ -26,7 +45,7 @@
 
         img {
             width: 100%;
-            min-width: 480px;
+            min-width: 300px;
             height: 200px;
             object-fit: cover;   
             border-radius: 15px 15px 0 0;

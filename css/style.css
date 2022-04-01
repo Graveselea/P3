@@ -1,6 +1,14 @@
+/* media */
 /* color */
+/* animation menu */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes opacity {
+  from {
+    opacity: 0;
+    margin-top: 10px; }
+  to {
+    opacity: 1; } }
 *,
 ::before,
 ::after {
@@ -23,7 +31,8 @@ header {
   padding: 3px;
   position: relative; }
   header h1 {
-    margin: 10px 0; }
+    margin: 10px 0;
+    font-size: 35px; }
   header a {
     color: #332d2c; }
 
@@ -113,13 +122,25 @@ button {
 
 .restaurant {
   background-color: #f6f6f6; }
+  .restaurant h3,
+  .restaurant p {
+    padding-left: 20px; }
+  .restaurant p {
+    margin: -15px 0 15px 0; }
   .restaurant .restaurant_card {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; }
+    gap: 20px;
+    padding-bottom: 40px;
+    position: relative; }
     .restaurant .restaurant_card a {
       text-decoration: none;
       color: #332d2c; }
+      .restaurant .restaurant_card a i.fa-heart {
+        position: absolute;
+        margin-top: -50px;
+        right: 19px;
+        font-size: 25px; }
   .restaurant .card {
     background-color: white;
     flex-grow: 1;
@@ -135,7 +156,7 @@ button {
       cursor: pointer; }
     .restaurant .card img {
       width: 100%;
-      min-width: 480px;
+      min-width: 300px;
       height: 200px;
       object-fit: cover;
       border-radius: 15px 15px 0 0;
@@ -153,7 +174,10 @@ footer {
     color: white;
     padding: 4px 0 4px 0; }
   footer .footer_bold {
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 10px; }
+  footer i {
+    width: 24px; }
 
 .header_page {
   box-shadow: none; }
@@ -162,7 +186,7 @@ footer {
     align-items: center;
     justify-content: flex-start; }
     .header_page nav h1 {
-      font-size: 30px;
+      font-size: 35px;
       margin-left: -45px; }
     .header_page nav #logo {
       margin: auto; }
@@ -186,37 +210,62 @@ footer {
     padding-top: 40px;
     position: relative;
     font-size: 30px; }
-  .menu_page i {
+  .menu_page .fa-heart {
     position: absolute;
     top: 49px;
     right: 50px;
     font-size: 25px; }
-  .menu_page .menu_class_page h4 {
-    text-decoration: underline 4px #99E2D0; }
   .menu_page .button_page {
     text-align: center; }
 
-.menu_description_page {
+.menu hr {
+  border: 2px solid #99E2D0;
+  width: 40px;
+  margin: -8px 0 0 0; }
+.menu i.fa-solid.fa-circle-check {
+  margin-bottom: 1px; }
+.menu__description {
   background-color: white;
   flex-grow: 1;
   min-width: 40%;
   border-radius: 15px;
   transition-duration: 0.3s;
-  box-shadow: 0px 4px 5px #d3d3d3; }
-  .menu_description_page:hover {
+  box-shadow: 0px 4px 5px #d3d3d3;
+  animation: opacity 2000ms; }
+  .menu__description:hover {
     transform: scale(1.02);
     transition: all 200ms;
     opacity: 0.9;
     box-shadow: 0px 4px 5px grey;
     cursor: pointer; }
-  .menu_description_page h3 {
+  .menu__description h3 {
     color: #332d2c;
-    padding: 10px 10px 0px 10px; }
-  .menu_description_page p {
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px; }
+  .menu__description p {
     color: #332d2c;
     padding: 0px 10px 1px 10px;
+    margin-top: 0px;
     position: relative; }
-    .menu_description_page p b {
+    .menu__description p b {
       position: absolute;
       top: -35px;
       right: 50px; }
+  .menu__description--1 {
+    animation-delay: 222.2222222222ms; }
+  .menu__description--2 {
+    animation-delay: 444.4444444444ms; }
+  .menu__description--3 {
+    animation-delay: 666.6666666667ms; }
+  .menu__description--4 {
+    animation-delay: 888.8888888889ms; }
+  .menu__description--5 {
+    animation-delay: 1111.1111111111ms; }
+  .menu__description--6 {
+    animation-delay: 1333.3333333333ms; }
+  .menu__description--7 {
+    animation-delay: 1555.5555555556ms; }
+  .menu__description--8 {
+    animation-delay: 1777.7777777778ms; }
+  .menu__description--9 {
+    animation-delay: 2000ms; }

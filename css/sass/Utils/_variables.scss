@@ -1,3 +1,5 @@
+/* media */
+
 $tablet : 768px;
 $desktop : 992px;
 
@@ -12,3 +14,9 @@ $color-greymiddle :#d3d3d3;
 $color-greydark : grey;
 $color-white : white;
 $color-black : #332d2c;
+
+/* animation menu */
+
+$num-card-menu: 9;
+$anim-dur-menu: 2000ms;
+$anim-delay-menu: $anim-dur-menu / $num-card-menu;
