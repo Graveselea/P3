@@ -4,7 +4,7 @@
 
 @mixin zoom2 {
   transform: scale(1.02);
-  transition: all 200ms;
+  transition: all 100ms;
   opacity: 0.9;
   box-shadow: 0px 4px 5px $color-greydark;  
   cursor: pointer; 

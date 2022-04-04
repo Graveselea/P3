@@ -13,14 +13,17 @@
         background-color: $color-grey ;
         padding: 30px;
         flex-grow: 1;
-        margin: 20px 30px 0 0;
+        margin: 20px 0 0 22px;
         border-radius: 20px; 
         @include base-shadow;
         list-style-type: none;
         position: relative;
         &:hover {
             @include zoom2;    
-            background-color: $color-primary;
+            background-color: rgba(147, 86, 220, 0.2);
+            i.fa-solid {
+                color: $color-primary;
+            }
         } 
         &::before {
             content:"" counter(steps);
@@ -42,9 +45,6 @@
         color: $color-greydark;
         margin: 0 30px 0 20px;
         font-size: 20px;
-        &:hover {
-            color: $color-primary;
-        }
         }
     }
 }

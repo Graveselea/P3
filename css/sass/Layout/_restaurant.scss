@@ -1,45 +1,50 @@
 .restaurant {
     background-color: $color-greylight;
-
     h3,
     p {
         padding-left: 20px;
     }
-
     p {
         margin : -15px 0 15px 0;
     }
-
     .restaurant_card {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 30px;
+        row-gap: 30px;
         flex-wrap: wrap;
-        gap: 20px; 
         padding-bottom: 40px;
-        position: relative;
-               
+        position: relative;   
         a {
             text-decoration: none;
             color: $color-black;        
-            i.fa-heart {
+        }            
+        i.fa-heart {
             position: absolute;
             margin-top: -50px;
             right: 19px;
             font-size: 25px;
-        }
+            }
+        .new {
+            background-color: $color-tertiary;
+            color: #1b6150;
+            padding: 8px;
+            border-radius: 2px;
+            position: absolute;
+            right: 20px;
+            margin-top: 20px;
         }
     }
-
     .card {
         background-color: $color-white;
         flex-grow: 1;
         min-width: 40%;
         border-radius: 15px;
         transition-duration: 0.3s;
-
         @include base-shadow ;
         &:hover {
             @include zoom2;
-        }
+        }    
 
         img {
             width: 100%;
@@ -52,5 +57,5 @@
     }
 }
 
-
+      
 

@@ -1,14 +1,28 @@
 /* media */
 /* color */
 /* animation menu */
+/*@keyframes opacity-1 {
+    from {
+        opacity : 0;
+        margin-top: 40px;
+    }
+    to {
+        opacity : 1;
+    }
+  }*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@keyframes opacity {
+@keyframes opacity-1 {
   from {
-    opacity: 0;
-    margin-top: 10px; }
+    transform: translate3d(0, 40px, 0); }
   to {
+    transform: translate3d(0, 0, 0);
     opacity: 1; } }
+@keyframes rotate1 {
+  from {
+    rotate: -180deg; }
+  to {
+    rotate: 0; } }
 *,
 ::before,
 ::after {
@@ -69,7 +83,7 @@ button {
   box-shadow: 0px 4px 5px #d3d3d3; }
   button:hover {
     transform: scale(1.02);
-    transition: all 200ms;
+    transition: all 100ms;
     opacity: 0.9;
     box-shadow: 0px 4px 5px grey;
     cursor: pointer; }
@@ -86,18 +100,20 @@ button {
     background-color: #eaeaea;
     padding: 30px;
     flex-grow: 1;
-    margin: 20px 30px 0 0;
+    margin: 20px 0 0 22px;
     border-radius: 20px;
     box-shadow: 0px 4px 5px #d3d3d3;
     list-style-type: none;
     position: relative; }
     .fonctionnement li:hover {
       transform: scale(1.02);
-      transition: all 200ms;
+      transition: all 100ms;
       opacity: 0.9;
       box-shadow: 0px 4px 5px grey;
       cursor: pointer;
-      background-color: #9356DC; }
+      background-color: rgba(147, 86, 220, 0.2); }
+      .fonctionnement li:hover i.fa-solid {
+        color: #9356DC; }
     .fonctionnement li::before {
       content: "" counter(steps);
       counter-increment: steps;
@@ -117,8 +133,6 @@ button {
       color: grey;
       margin: 0 30px 0 20px;
       font-size: 20px; }
-      .fonctionnement li i.fa-solid:hover {
-        color: #9356DC; }
 
 .restaurant {
   background-color: #f6f6f6; }
@@ -128,19 +142,29 @@ button {
   .restaurant p {
     margin: -15px 0 15px 0; }
   .restaurant .restaurant_card {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
     flex-wrap: wrap;
-    gap: 20px;
     padding-bottom: 40px;
     position: relative; }
     .restaurant .restaurant_card a {
       text-decoration: none;
       color: #332d2c; }
-      .restaurant .restaurant_card a i.fa-heart {
-        position: absolute;
-        margin-top: -50px;
-        right: 19px;
-        font-size: 25px; }
+    .restaurant .restaurant_card i.fa-heart {
+      position: absolute;
+      margin-top: -50px;
+      right: 19px;
+      font-size: 25px; }
+    .restaurant .restaurant_card .new {
+      background-color: #99E2D0;
+      color: #1b6150;
+      padding: 8px;
+      border-radius: 2px;
+      position: absolute;
+      right: 20px;
+      margin-top: 20px; }
   .restaurant .card {
     background-color: white;
     flex-grow: 1;
@@ -150,7 +174,7 @@ button {
     box-shadow: 0px 4px 5px #d3d3d3; }
     .restaurant .card:hover {
       transform: scale(1.02);
-      transition: all 200ms;
+      transition: all 100ms;
       opacity: 0.9;
       box-shadow: 0px 4px 5px grey;
       cursor: pointer; }
@@ -226,67 +250,69 @@ footer {
   display: flex;
   margin-top: 20px;
   overflow: hidden; }
+  .menu .menu_resume:hover .menu__description__check {
+    width: 80px; }
+  .menu .menu_resume:hover .check_icon {
+    animation: rotate1 .5s;
+    animation-delay: 100ms; }
+.menu .menu__description__itm {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 .menu__description {
+  box-shadow: 0px 4px 5px #d3d3d3;
   background-color: white;
   flex-grow: 1;
   min-width: 40%;
   border-radius: 15px;
   transition-duration: 0.3s;
-  box-shadow: 0px 4px 5px #d3d3d3;
-  animation: opacity 2000ms; }
-  .menu__description:hover {
-    transform: scale(1.02);
-    transition: all 200ms;
-    opacity: 0.9;
-    box-shadow: 0px 4px 5px grey;
-    cursor: pointer; }
+  opacity: 0;
+  animation-name: opacity-1;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+  .menu__description--1 {
+    animation-delay: 155.5555555556ms; }
+  .menu__description--2 {
+    animation-delay: 255.5555555556ms; }
+  .menu__description--3 {
+    animation-delay: 355.5555555556ms; }
+  .menu__description--4 {
+    animation-delay: 455.5555555556ms; }
+  .menu__description--5 {
+    animation-delay: 555.5555555556ms; }
+  .menu__description--6 {
+    animation-delay: 655.5555555556ms; }
+  .menu__description--7 {
+    animation-delay: 755.5555555556ms; }
+  .menu__description--8 {
+    animation-delay: 855.5555555556ms; }
+  .menu__description--9 {
+    animation-delay: 955.5555555556ms; }
   .menu__description h3 {
     color: #332d2c;
     margin-left: 30px; }
   .menu__description p {
     color: #332d2c;
-    margin-left: 30px; }
+    margin-left: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .menu__description .prix {
     font-weight: bold;
     margin-left: auto;
     margin-top: 60px;
     margin-right: 20px; }
-  .menu__description--1 {
-    animation-delay: 222.2222222222ms; }
-  .menu__description--2 {
-    animation-delay: 444.4444444444ms; }
-  .menu__description--3 {
-    animation-delay: 666.6666666667ms; }
-  .menu__description--4 {
-    animation-delay: 888.8888888889ms; }
-  .menu__description--5 {
-    animation-delay: 1111.1111111111ms; }
-  .menu__description--6 {
-    animation-delay: 1333.3333333333ms; }
-  .menu__description--7 {
-    animation-delay: 1555.5555555556ms; }
-  .menu__description--8 {
-    animation-delay: 1777.7777777778ms; }
-  .menu__description--9 {
-    animation-delay: 2000ms; }
 .menu .menu__description__check {
-  width: 80px;
+  width: 0;
   height: 96px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  margin-right: -80px;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  color: white; }
   .menu .menu__description__check i.fa-solid.fa-circle-check {
     margin-bottom: 1px;
     font-size: 30px; }
-  .menu .menu__description__check .check_icon {
-    transform: rotate(180deg);
-    color: white; }
-.menu:hover .menu__description__check {
-  margin-right: 0; }
-.menu:hover .check_icon {
-  transform: rotate(0);
-  transition-duration: 0.5s; }
