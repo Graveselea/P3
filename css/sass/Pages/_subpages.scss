@@ -47,15 +47,20 @@
     }
 }    
 
+    
 .menu { 
+    
+
     hr {
         border: 2px solid $color-tertiary;
         width: 40px;
         margin: -8px 0 0 0;
     }
 
-    i.fa-solid.fa-circle-check {
-        margin-bottom: 1px;
+    .menu_resume {
+        display: flex;
+        margin-top: 20px;
+        overflow: hidden;
     }
 
     &__description {    
@@ -64,31 +69,59 @@
     min-width: 40%;
     border-radius: 15px;
     transition-duration: 0.3s;
+    
     @include base-shadow ;
     &:hover {
         @include zoom2;
     }
+    
     h3 {
         color: $color-black;
-        padding: 10px 10px 0px 10px;
-        margin-bottom: 10px;
+        margin-left: 30px;
     }
     p {
         color: $color-black;
-        padding: 0px 10px 1px 10px;
-        margin-top: 0px;
-        position: relative;
-            b {
-                position: absolute;
-                top: -35px;
-                right: 50px;
-            }
-        }
+        margin-left: 30px;
+        }        
+    .prix {
+        font-weight: bold; 
+        margin-left: auto;
+        margin-top: 60px;
+        margin-right: 20px;
+    }
         animation: opacity $anim-dur-menu;
         @for $i from 1 through $num-card-menu {
             &--#{$i} {
-                animation-delay: $anim-delay-menu * $i;
+                animation-delay: $anim-delay-menu * $i; 
                 }
             }
+        }       
+    .menu__description__check {
+        width: 80px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        border-radius: 0 15px 15px 0;
+        margin-right: -80px;
+        transition: all 0.5s;      
+    i.fa-solid.fa-circle-check {
+        margin-bottom: 1px;
+        font-size: 30px;
         }
+    .check_icon {
+        transform: rotate(180deg); 
+        color: $color-white;
+        }
+    }
+    &:hover {
+        .menu__description__check {
+            margin-right: 0;      
+        }
+        .check_icon {
+            transform: rotate(0); 
+            transition-duration: 0.5s;
+        }
+    }
 }
