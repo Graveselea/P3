@@ -15,16 +15,14 @@
         flex-wrap: wrap;
         padding-bottom: 40px;
         position: relative;   
+        background-color: $color-white;
         a {
             text-decoration: none;
             color: $color-black;        
-        }            
-        i.fa-heart {
-            position: absolute;
-            margin-top: -50px;
-            right: 19px;
-            font-size: 25px;
-            }
+        }    
+        
+
+
         .new {
             background-color: $color-tertiary;
             color: #1b6150;
@@ -40,12 +38,10 @@
         flex-grow: 1;
         min-width: 40%;
         border-radius: 15px;
-        transition-duration: 0.3s;
         @include base-shadow ;
         &:hover {
             @include zoom2;
         }    
-
         img {
             width: 100%;
             min-width: 300px;
@@ -53,9 +49,28 @@
             object-fit: cover;   
             border-radius: 15px 15px 0 0;
             object-position:center;
+        }        
+        
+        i {
+            position: absolute;
+            margin-top: -50px;
+            right: 19px;
+            font-size: 25px;             
         }
-    }
+
+        .fa-regular {
+            opacity: 1;
+            &:hover {
+                opacity: 0;
+            }
+        }
+
+        .fa-solid {
+            @include heartsolid;
+            }    
+        }
 }
+
 
       
 

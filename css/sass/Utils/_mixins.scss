@@ -23,3 +23,16 @@
       @include zoom2;    
   }
 }
+
+@mixin heartsolid {
+    color: transparent;
+    background: linear-gradient(360deg, rgba(226,111,218,1) 0%, rgba(156,89,220,1) 41%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    &:hover {
+        opacity: 1;
+        transform: scale(1.02);
+    }    
+  }

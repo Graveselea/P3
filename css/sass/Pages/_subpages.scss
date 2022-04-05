@@ -41,6 +41,18 @@
         right: 50px;
         font-size: 25px;
     }
+
+    .fa-regular {
+        opacity: 1;
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    .fa-solid {
+        @include heartsolid;
+        }  
+        
    .button_page {
         text-align: center;
     }
@@ -86,7 +98,6 @@
             &--#{$i} {
                 animation-delay: $anim-delay-menu + 100ms*$i; 
             }
-                
         }
         h3 {
             color: $color-black;
@@ -104,8 +115,7 @@
             margin-left: auto;
             margin-top: 60px;
             margin-right: 20px;
-        }
-        
+        } 
     }       
     .menu__description__check {
         width: 0;
@@ -115,7 +125,6 @@
         align-items: center;
         background-color: $color-tertiary;
         border-radius: 0 15px 15px 0;
-    
         transition: all 0.5s; 
         color: $color-white;     
     i.fa-solid.fa-circle-check {

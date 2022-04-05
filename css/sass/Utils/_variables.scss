@@ -1,7 +1,9 @@
 /* media */
 
-$tablet : 768px;
-$desktop : 992px;
+$largedestok : only screen and (min-width : 1600px);
+$desktop : only screen and (min-width: 960px) and (max-width: 1599px);
+$tablet : 959px;
+$mobile : only screen and (max-width: 767px);
 
 /* color */
 

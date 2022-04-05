@@ -1,15 +1,6 @@
 /* media */
 /* color */
 /* animation menu */
-/*@keyframes opacity-1 {
-    from {
-        opacity : 0;
-        margin-top: 40px;
-    }
-    to {
-        opacity : 1;
-    }
-  }*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @keyframes opacity-1 {
@@ -93,7 +84,7 @@ button {
   .fonctionnement ol {
     display: flex;
     padding: 0; }
-    @media (max-width: 768px) {
+    @media (max-width: 959px) {
       .fonctionnement ol {
         flex-direction: column; } }
   .fonctionnement li {
@@ -148,15 +139,11 @@ button {
     row-gap: 30px;
     flex-wrap: wrap;
     padding-bottom: 40px;
-    position: relative; }
+    position: relative;
+    background-color: white; }
     .restaurant .restaurant_card a {
       text-decoration: none;
       color: #332d2c; }
-    .restaurant .restaurant_card i.fa-heart {
-      position: absolute;
-      margin-top: -50px;
-      right: 19px;
-      font-size: 25px; }
     .restaurant .restaurant_card .new {
       background-color: #99E2D0;
       color: #1b6150;
@@ -170,7 +157,6 @@ button {
     flex-grow: 1;
     min-width: 40%;
     border-radius: 15px;
-    transition-duration: 0.3s;
     box-shadow: 0px 4px 5px #d3d3d3; }
     .restaurant .card:hover {
       transform: scale(1.02);
@@ -185,6 +171,25 @@ button {
       object-fit: cover;
       border-radius: 15px 15px 0 0;
       object-position: center; }
+    .restaurant .card i {
+      position: absolute;
+      margin-top: -50px;
+      right: 19px;
+      font-size: 25px; }
+    .restaurant .card .fa-regular {
+      opacity: 1; }
+      .restaurant .card .fa-regular:hover {
+        opacity: 0; }
+    .restaurant .card .fa-solid {
+      color: transparent;
+      background: linear-gradient(360deg, #e26fda 0%, #9c59dc 41%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out; }
+      .restaurant .card .fa-solid:hover {
+        opacity: 1;
+        transform: scale(1.02); }
 
 footer {
   background-color: #332d2c;
@@ -239,6 +244,20 @@ footer {
     top: 49px;
     right: 50px;
     font-size: 25px; }
+  .menu_page .fa-regular {
+    opacity: 1; }
+    .menu_page .fa-regular:hover {
+      opacity: 0; }
+  .menu_page .fa-solid {
+    color: transparent;
+    background: linear-gradient(360deg, #e26fda 0%, #9c59dc 41%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; }
+    .menu_page .fa-solid:hover {
+      opacity: 1;
+      transform: scale(1.02); }
   .menu_page .button_page {
     text-align: center; }
 
