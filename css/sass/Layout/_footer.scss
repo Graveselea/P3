@@ -3,17 +3,14 @@ footer {
     color: $color-white;
     display: flex;
     flex-direction: column;
-    padding: 0 0 50px 30px;
-
+    padding: 0 0 50px 25px;
     h3 {
         font-family: 'Shrikhand', cursive;
     }
-    
     a {
         color: $color-white;
         padding: 4px 0 4px 0;
     }
-
     .footer_bold {
         font-weight: bold;
         margin-bottom: 10px;

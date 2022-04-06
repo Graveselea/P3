@@ -1,15 +1,18 @@
 
 .fonctionnement {
     counter-reset: steps;
+    h2 {
+        margin: 45px 0px 15px 0 ;
+    }
     ol {
         display: flex;
-        padding: 0;
+        padding: 0 0 45px 0;
         @media(max-width:$tablet){
         flex-direction: column; 
-        
         }
     }
     li {
+        font-weight: bold;
         background-color: $color-grey ;
         padding: 30px;
         flex-grow: 1;

@@ -1,12 +1,18 @@
 .restaurant {
+    padding-bottom: 45px;
     background-color: $color-greylight;
+    h2 {
+        padding-top: 45px;
+    }
     h3,
     p {
-        padding-left: 20px;
+        margin-top : 10px;
+        padding-left: 15px;
     }
     p {
         margin : -15px 0 15px 0;
     }
+    
     .restaurant_card {
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -15,14 +21,11 @@
         flex-wrap: wrap;
         padding-bottom: 40px;
         position: relative;   
-        background-color: $color-white;
+
         a {
             text-decoration: none;
             color: $color-black;        
         }    
-        
-
-
         .new {
             background-color: $color-tertiary;
             color: #1b6150;
@@ -50,22 +53,19 @@
             border-radius: 15px 15px 0 0;
             object-position:center;
         }        
-        
         i {
             position: absolute;
             margin-top: -50px;
             right: 19px;
             font-size: 25px;             
         }
-
-        .fa-regular {
+        .fa-regular.fa-heart {
             opacity: 1;
             &:hover {
                 opacity: 0;
             }
         }
-
-        .fa-solid {
+        .fa-solid.fa-heart {
             @include heartsolid;
             }    
         }

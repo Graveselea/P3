@@ -1,6 +1,4 @@
-
-
-  @keyframes opacity-1 {
+@keyframes opacity-1 {
     from {
         transform: translate3d(0,40px,0);
     }
@@ -9,8 +7,7 @@
         opacity: 1;
     }
   }
-
-  @keyframes rotate1 {
+@keyframes rotate1 {
     from {
         rotate: -180deg ;
     }

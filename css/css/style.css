@@ -27,7 +27,7 @@ body {
     text-decoration: none; }
 
 section {
-  padding: 0 20px; }
+  padding: 0 30px; }
 
 header {
   font-family: 'Shrikhand', cursive;
@@ -49,7 +49,7 @@ header {
   text-align: center; }
   .city i,
   .city h2 {
-    margin: 20px 12px;
+    margin: 20px 15px;
     font-size: 20px; }
 
 .explorer {
@@ -66,7 +66,7 @@ button {
   background: linear-gradient(180deg, #e26fda 19%, #9c59dc 63%);
   color: white;
   font-size: 15px;
-  padding: 15px 30px;
+  padding: 15px 20px;
   border-radius: 30px;
   border: none;
   margin-top: 15px;
@@ -81,16 +81,13 @@ button {
 
 .fonctionnement {
   counter-reset: steps; }
-  .fonctionnement h2 {
-    margin: 45px 0px 15px 0; }
   .fonctionnement ol {
     display: flex;
-    padding: 0 0 45px 0; }
+    padding: 0; }
     @media (max-width: 959px) {
       .fonctionnement ol {
         flex-direction: column; } }
   .fonctionnement li {
-    font-weight: bold;
     background-color: #eaeaea;
     padding: 30px;
     flex-grow: 1;
@@ -129,14 +126,10 @@ button {
       font-size: 20px; }
 
 .restaurant {
-  padding-bottom: 45px;
   background-color: #f6f6f6; }
-  .restaurant h2 {
-    padding-top: 45px; }
   .restaurant h3,
   .restaurant p {
-    margin-top: 10px;
-    padding-left: 15px; }
+    padding-left: 20px; }
   .restaurant p {
     margin: -15px 0 15px 0; }
   .restaurant .restaurant_card {
@@ -146,7 +139,8 @@ button {
     row-gap: 30px;
     flex-wrap: wrap;
     padding-bottom: 40px;
-    position: relative; }
+    position: relative;
+    background-color: white; }
     .restaurant .restaurant_card a {
       text-decoration: none;
       color: #332d2c; }
@@ -182,18 +176,18 @@ button {
       margin-top: -50px;
       right: 19px;
       font-size: 25px; }
-    .restaurant .card .fa-regular.fa-heart {
+    .restaurant .card .fa-regular {
       opacity: 1; }
-      .restaurant .card .fa-regular.fa-heart:hover {
+      .restaurant .card .fa-regular:hover {
         opacity: 0; }
-    .restaurant .card .fa-solid.fa-heart {
+    .restaurant .card .fa-solid {
       color: transparent;
       background: linear-gradient(360deg, #e26fda 0%, #9c59dc 41%);
       background-clip: text;
       -webkit-background-clip: text;
       opacity: 0;
       transition: opacity 0.5s ease-in-out; }
-      .restaurant .card .fa-solid.fa-heart:hover {
+      .restaurant .card .fa-solid:hover {
         opacity: 1;
         transform: scale(1.02); }
 
@@ -202,7 +196,7 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 0 0 50px 25px; }
+  padding: 0 0 50px 30px; }
   footer h3 {
     font-family: 'Shrikhand', cursive; }
   footer a {
@@ -242,7 +236,7 @@ footer {
   position: relative; }
   .menu_page h2 {
     font-family: 'Shrikhand', cursive;
-    padding: 30px 0;
+    padding-top: 40px;
     position: relative;
     font-size: 30px; }
   .menu_page .fa-heart {
@@ -250,25 +244,22 @@ footer {
     top: 49px;
     right: 50px;
     font-size: 25px; }
-  .menu_page .fa-heart.fa-regular {
+  .menu_page .fa-regular {
     opacity: 1; }
-    .menu_page .fa-heart.fa-regular:hover {
+    .menu_page .fa-regular:hover {
       opacity: 0; }
-  .menu_page .fa-heart.fa-solid {
+  .menu_page .fa-solid {
     color: transparent;
     background: linear-gradient(360deg, #e26fda 0%, #9c59dc 41%);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
     transition: opacity 0.5s ease-in-out; }
-    .menu_page .fa-heart.fa-solid:hover {
+    .menu_page .fa-solid:hover {
       opacity: 1;
       transform: scale(1.02); }
   .menu_page .button_page {
-    margin-top: 45px;
     text-align: center; }
-  .menu_page button {
-    padding: 15px 50px; }
 
 .menu hr {
   border: 2px solid #99E2D0;
@@ -321,21 +312,21 @@ footer {
     animation-delay: 1050ms; }
   .menu__description h3 {
     color: #332d2c;
-    margin: 15px; }
+    margin-left: 30px; }
   .menu__description p {
     color: #332d2c;
-    margin: 15px;
+    margin-left: 30px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
   .menu__description .prix {
     font-weight: bold;
     margin-left: auto;
-    margin-top: 54px;
+    margin-top: 60px;
     margin-right: 20px; }
 .menu .menu__description__check {
   width: 0;
-  height: 90px;
+  height: 96px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,4 +336,8 @@ footer {
   color: white; }
   .menu .menu__description__check i.fa-solid.fa-circle-check {
     margin-bottom: 1px;
-    font-size: 30px; }
+    font-size: 30px;
+    color: white;
+    animation: rotate1; }
+
+/*# sourceMappingURL=style.css.map */

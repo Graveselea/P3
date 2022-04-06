@@ -31,7 +31,7 @@
     position: relative;
     h2 {
         font-family: 'Shrikhand', cursive;
-        padding-top: 40px;
+        padding: 30px 0;
         position: relative;
         font-size: 30px;
     }
@@ -41,20 +41,22 @@
         right: 50px;
         font-size: 25px;
     }
-
-    .fa-regular {
+    .fa-heart.fa-regular {
         opacity: 1;
         &:hover {
             opacity: 0;
-        }
+            }
     }
-
-    .fa-solid {
+    .fa-heart.fa-solid {
         @include heartsolid;
-        }  
-        
+    }  
    .button_page {
+        margin-top: 45px;
         text-align: center;
+        
+    }
+    button {
+        padding: 15px 50px;
     }
 }        
 .menu { 
@@ -101,11 +103,11 @@
         }
         h3 {
             color: $color-black;
-            margin-left: 30px;
+            margin: 15px;
         }
         p {
             color: $color-black;
-            margin-left: 30px;
+            margin: 15px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -113,13 +115,13 @@
         .prix {
             font-weight: bold; 
             margin-left: auto;
-            margin-top: 60px;
+            margin-top: 54px;
             margin-right: 20px;
         } 
     }       
     .menu__description__check {
         width: 0;
-        height: 96px;
+        height: 90px;
         display: flex;
         justify-content: center;
         align-items: center;

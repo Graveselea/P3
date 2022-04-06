@@ -1,9 +1,9 @@
 /* media */
 
-$largedestok : only screen and (min-width : 1600px);
-$desktop : only screen and (min-width: 960px) and (max-width: 1599px);
+$largedestok : 1600px;
+$desktop : 1599px;
 $tablet : 959px;
-$mobile : only screen and (max-width: 767px);
+$mobile : 767px;
 
 /* color */
 
@@ -19,6 +19,6 @@ $color-black : #332d2c;
 
 /* animation menu */
 
-$num-card-menu: 9;
+$num-card-menu: 10;
 $anim-dur-menu: 500ms;
 $anim-delay-menu: $anim-dur-menu / $num-card-menu;

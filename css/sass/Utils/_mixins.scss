@@ -1,7 +1,6 @@
 @mixin base-shadow {
     box-shadow: 0px 4px 5px $color-greymiddle;
 }
-
 @mixin zoom2 {
   transform: scale(1.02);
   transition: all 100ms;
@@ -9,11 +8,10 @@
   box-shadow: 0px 4px 5px $color-greydark;  
   cursor: pointer; 
 }
-
 @mixin button {
   background: linear-gradient(180deg, rgba(226,111,218,1) 19%, rgba(156,89,220,1) 63%);     color: white;
   font-size: 15px ;
-  padding: 15px 20px;
+  padding: 15px 30px;
   border-radius: 30px;
   border: none;
   margin-top: 15px; 
@@ -23,7 +21,6 @@
       @include zoom2;    
   }
 }
-
 @mixin heartsolid {
     color: transparent;
     background: linear-gradient(360deg, rgba(226,111,218,1) 0%, rgba(156,89,220,1) 41%);
