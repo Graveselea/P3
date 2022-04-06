@@ -12,9 +12,9 @@
     opacity: 1; } }
 @keyframes rotate1 {
   from {
-    rotate: -180deg; }
+    transform: rotate(-180deg); }
   to {
-    rotate: 0; } }
+    transform: rotate(0); } }
 @keyframes bars {
   0% {
     transform: scaleY(0.5); }
@@ -368,7 +368,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30%; }
+    margin-top: 400px; }
   .container .load {
     width: 250px;
     height: 100px;
