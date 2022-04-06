@@ -1,0 +1,46 @@
+.container {
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    background-color: $color-white;
+    opacity : 0.95;
+    animation: disappear 2400ms ease-in-out;
+    animation-fill-mode: forwards ;
+    .load-contain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30%;
+    }
+    .load {
+    width:250px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    h1 { 
+        font-family: 'Shrikhand', cursive;
+        font-size: 22px;
+        text-align: center;
+        color: $color-white;
+        padding-top: 20px;
+    }
+    &__bar {
+        background: linear-gradient(4deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 41%);
+        height: 100%;
+        width: 25px;
+        border-radius: 15px;
+        animation: bars $anim-dur-bars backwards infinite ease-in-out alternate;
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                animation-delay: $anim-delay-bars * $i;
+             }
+             &--#{$i}-shadow {
+                animation-delay: $anim-delay-bars * $i;
+                background: linear-gradient(152deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 41%);
+                opacity: 0.5;
+            }
+        }
+    }   
+}
+}

@@ -22,3 +22,9 @@ $color-black : #332d2c;
 $num-card-menu: 10;
 $anim-dur-menu: 500ms;
 $anim-delay-menu: $anim-dur-menu / $num-card-menu;
+
+/* animation loader */
+
+$num-bars : 8;
+$anim-dur-bars : 1000ms;
+$anim-delay-bars : $anim-dur-bars / $num-bars;
