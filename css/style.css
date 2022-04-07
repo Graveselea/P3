@@ -302,7 +302,8 @@ footer {
     animation-delay: 100ms; }
 .menu .menu_cat {
   max-width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 5px 5px 20px 5px; }
 .menu .menu__description__itm {
   white-space: nowrap;
   overflow: hidden;
@@ -544,3 +545,5 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5%; } }
+
+/*# sourceMappingURL=style.css.map */
