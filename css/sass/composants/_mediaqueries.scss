@@ -1,0 +1,164 @@
+
+@media screen and  (min-width: $mobile) and (max-width: $tablet) {
+    .explorer {
+    br {
+        display: none;
+        }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+    .fonctionnement {   
+        h2 {
+            font-size: 30px;
+        }
+        li {
+            font-size: 20px;
+        }
+        ol {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    .restaurant {
+        h2 {
+            font-size: 30px;
+        }
+        .restaurant_card {
+            display: flex;
+    }
+    }
+}
+
+@media screen and  (min-width: $tablet) and (max-width: $desktop) {
+    .explorer {
+    br {
+        display: none;
+        }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+    .fonctionnement {   
+    h2 {
+        font-size: 30px;
+    }
+    li {
+        font-size: 20px;
+    }
+    ol {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+    .restaurant {
+        h2 {
+            font-size: 30px;
+        }
+        .restaurant_card {
+            grid-template-columns: repeat(2, 1fr);                    
+    }
+}
+    footer {
+        flex-direction: row;
+        align-items: center;
+        a {
+            padding: 0 10px;
+            margin: 0 10px;
+        }
+        .footer_bold {
+            margin-bottom: 0;
+            
+            i {
+                margin-right: -40px;
+            }
+        }
+    }
+
+    .menu_page {
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
+
+        }
+    }
+}
+
+@media screen and  (min-width: $largedesktop) {
+    .explorer{
+    br {
+        display: none;
+        }
+     h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+    .fonctionnement {   
+        h2 {
+            font-size: 30px;
+        }
+        li {
+            font-size: 20px;
+        }
+        ol {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        }        
+        .restaurant {
+            h2 {
+                font-size: 30px;
+            }
+            .restaurant_card {
+                grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    footer {
+        flex-direction: row;
+        align-items: center;
+        a {
+            padding: 0 10px;
+            margin: 0 10px;
+        }
+        .footer_bold {
+            margin-bottom: 0;
+            
+            i {
+                margin-right: -40px;
+            }
+        }
+    }
+    .menu_page {
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
+
+        }
+    }
+}

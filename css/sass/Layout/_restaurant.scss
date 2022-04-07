@@ -1,5 +1,5 @@
 .restaurant {
-    padding-bottom: 45px;
+    padding-bottom: 20px;
     background-color: $color-greylight;
     h2 {
         padding-top: 45px;
@@ -19,8 +19,7 @@
         column-gap: 30px;
         row-gap: 30px;
         flex-wrap: wrap;
-        padding-bottom: 40px;
-        position: relative;   
+        padding-bottom: 40px; 
 
         a {
             text-decoration: none;
@@ -41,6 +40,7 @@
         flex-grow: 1;
         min-width: 40%;
         border-radius: 15px;
+        position: relative;
         @include base-shadow ;
         &:hover {
             @include zoom2;
@@ -55,10 +55,11 @@
         }        
         i {
             position: absolute;
-            margin-top: -50px;
-            right: 19px;
+            margin-top: -12%;
+            right: 5%;
             font-size: 25px;             
         }
+
         .fa-regular.fa-heart {
             opacity: 1;
             &:hover {
@@ -68,6 +69,12 @@
         .fa-solid.fa-heart {
             @include heartsolid;
             }    
+        }
+        .heartbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
         }
 }
 

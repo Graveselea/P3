@@ -7,9 +7,7 @@
     ol {
         display: flex;
         padding: 0 0 45px 0;
-        @media(max-width:$tablet){
-        flex-direction: column; 
-        }
+        flex-direction: column;
     }
     li {
         font-weight: bold;
@@ -42,7 +40,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: -4%;
+            left: -10px;
         }
     i.fa-solid {
         color: $color-greydark;
