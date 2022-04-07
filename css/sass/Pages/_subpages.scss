@@ -69,15 +69,21 @@
         display: flex;
         margin-top: 20px;
         overflow: hidden;
+        text-overflow: ellipsis;
         &:hover {
             .menu__description__check {
-                width: 80px;      
+                margin-right: 0px;    
             }
             .check_icon {
                 animation: rotate1 .5s;
                 animation-delay: 100ms;
             }
         }
+    }
+
+    .menu_cat {
+        max-width: 100%;
+        overflow: hidden;
     }
     .menu__description__itm {
         white-space: nowrap;
@@ -108,17 +114,19 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-        }       
+        }
         .prix {
             font-weight: bold; 
             margin-left: auto;
             margin-top: 54px;
             margin-right: 20px;
             color: $color-black;
+            overflow:visible;
         } 
     }       
     .menu__description__check {
-        width: 0;
+        margin-right: -85px;
+        min-width: 80px;
         height: 90px;
         display: flex;
         justify-content: center;

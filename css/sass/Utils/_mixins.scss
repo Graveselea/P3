@@ -9,12 +9,13 @@
   cursor: pointer; 
 }
 @mixin button {
-  background: linear-gradient(180deg, rgba(226,111,218,1) 19%, rgba(156,89,220,1) 63%);     color: white;
+  background: linear-gradient(180deg, rgba(226,111,218,1) 19%, rgba(156,89,220,1) 63%);     
   font-size: 15px ;
   padding: 15px 30px;
   border-radius: 30px;
   border: none;
   margin-top: 15px; 
+  color: $color-white;
   margin-bottom: 20px;
   @include base-shadow;
       &:hover {
@@ -23,7 +24,6 @@
   @media screen and  (min-width: $mobile) {
   font-size: 20px;   
 }
-
 }
 
 @mixin heartsolid {

@@ -48,7 +48,8 @@ header {
     margin: 10px 0;
     font-size: 35px; }
   header a {
-    color: #332d2c; }
+    color: #332d2c;
+    text-decoration: none; }
 
 .city {
   display: flex;
@@ -73,12 +74,12 @@ header {
 
 button {
   background: linear-gradient(180deg, #e26fda 19%, #9c59dc 63%);
-  color: white;
   font-size: 15px;
   padding: 15px 30px;
   border-radius: 30px;
   border: none;
   margin-top: 15px;
+  color: white;
   margin-bottom: 20px;
   box-shadow: 0px 4px 5px #d3d3d3; }
   button:hover {
@@ -292,12 +293,16 @@ footer {
 .menu .menu_resume {
   display: flex;
   margin-top: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  text-overflow: ellipsis; }
   .menu .menu_resume:hover .menu__description__check {
-    width: 80px; }
+    margin-right: 0px; }
   .menu .menu_resume:hover .check_icon {
     animation: rotate1 .5s;
     animation-delay: 100ms; }
+.menu .menu_cat {
+  max-width: 100%;
+  overflow: hidden; }
 .menu .menu__description__itm {
   white-space: nowrap;
   overflow: hidden;
@@ -346,9 +351,11 @@ footer {
     margin-left: auto;
     margin-top: 54px;
     margin-right: 20px;
-    color: #332d2c; }
+    color: #332d2c;
+    overflow: visible; }
 .menu .menu__description__check {
-  width: 0;
+  margin-right: -85px;
+  min-width: 80px;
   height: 90px;
   display: flex;
   justify-content: center;
@@ -495,13 +502,10 @@ footer {
 
   .menu_page h2 {
     font-size: 40px; }
-  .menu_page p {
-    display: flex;
-    flex-wrap: wrap; }
   .menu_page .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px; } }
+    column-gap: 5%; } }
 @media screen and (min-width: 1600px) {
   .explorer br {
     display: none; }
@@ -536,12 +540,7 @@ footer {
 
   .menu_page h2 {
     font-size: 30px; }
-  .menu_page p {
-    display: flex;
-    flex-wrap: wrap; }
   .menu_page .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px; } }
-
-/*# sourceMappingURL=style.css.map */
+    column-gap: 5%; } }
