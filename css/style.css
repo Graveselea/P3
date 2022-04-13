@@ -258,7 +258,7 @@ footer {
   position: relative; }
   .menu_page h2 {
     font-family: 'Shrikhand', cursive;
-    padding: 40px;
+    padding: 40px 40px 40px 5px;
     position: relative;
     font-size: 30px; }
   .menu_page .fa-heart {
