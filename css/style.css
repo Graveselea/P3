@@ -99,7 +99,8 @@ button {
   .fonctionnement ol {
     display: flex;
     padding: 0 0 45px 0;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-left: -10px;}
   .fonctionnement li {
     font-weight: bold;
     background-color: #eaeaea;
