@@ -154,8 +154,9 @@ button {
   .fonctionnement ol {
     display: flex;
     padding: 0 0 45px 0;
-    flex-direction: column; }
-  /* line 12, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+    flex-direction: column;
+    margin-left: -10px; }
+  /* line 13, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement li {
     font-weight: bold;
     background-color: #eaeaea;
@@ -166,7 +167,7 @@ button {
     box-shadow: 0px 4px 5px #d3d3d3;
     list-style-type: none;
     position: relative; }
-    /* line 22, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+    /* line 23, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
     .fonctionnement li:hover {
       transform: scale(1.02);
       transition: all 100ms;
@@ -174,10 +175,10 @@ button {
       box-shadow: 0px 4px 5px grey;
       cursor: pointer;
       background-color: rgba(147, 86, 220, 0.2); }
-      /* line 25, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+      /* line 26, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
       .fonctionnement li:hover i.fa-solid {
         color: #9356DC; }
-    /* line 29, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+    /* line 30, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
     .fonctionnement li::before {
       content: "" counter(steps);
       counter-increment: steps;
@@ -193,44 +194,44 @@ button {
       top: 50%;
       transform: translateY(-50%);
       left: -10px; }
-    /* line 45, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+    /* line 46, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
     .fonctionnement li i.fa-solid {
       color: grey;
       margin: 0 20px 0 10px;
       font-size: 20px; }
 
 @media screen and (min-width: 767px) and (max-width: 959px) {
-  /* line 55, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 56, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement h2 {
     font-size: 30px; }
-  /* line 58, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 59, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement li {
     font-size: 20px; }
-  /* line 61, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 62, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement ol {
     flex-direction: row;
     flex-wrap: wrap; } }
 
 @media screen and (min-width: 959px) and (max-width: 1599px) {
-  /* line 70, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 71, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement h2 {
     font-size: 30px; }
-  /* line 73, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 74, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement li {
     font-size: 20px; }
-  /* line 76, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 77, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement ol {
     flex-direction: row;
     flex-wrap: wrap; } }
 
 @media screen and (min-width: 1600px) {
-  /* line 86, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 87, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement h2 {
     font-size: 30px; }
-  /* line 89, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 90, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement li {
     font-size: 20px; }
-  /* line 92, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  /* line 93, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement ol {
     flex-wrap: wrap;
     flex-direction: row; } }
@@ -425,7 +426,7 @@ footer {
 
 /* line 20, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .img_page {
-  min-width: 100%;
+  width: 100%;
   height: 350px;
   object-fit: cover;
   object-position: center; }
@@ -439,7 +440,7 @@ footer {
   /* line 32, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu_page h2 {
     font-family: 'Shrikhand', cursive;
-    padding: 40px;
+    padding: 40px 40px 40px 5px;
     position: relative;
     font-size: 30px; }
   /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
