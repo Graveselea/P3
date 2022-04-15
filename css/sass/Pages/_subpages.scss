@@ -43,6 +43,7 @@
     }
     .fa-heart.fa-regular {
         opacity: 1;
+        color: $color-black;
         &:hover {
             opacity: 0;
             }
@@ -142,4 +143,32 @@
         }
     }
 
+}
+
+@media screen and  (min-width: $tablet) and (max-width: $desktop) {
+    .menu_page {
+        h2 {
+            font-size: 40px;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5%;
+
+        }
+    }
+}
+
+@media screen and  (min-width: $largedesktop) {
+    .menu_page {
+        h2 {
+            font-size: 30px;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5%;
+
+        }
+    }
 }

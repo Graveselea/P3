@@ -79,5 +79,36 @@
 }
 
 
-      
+@media screen and  (min-width: $mobile) and (max-width: $tablet) {
 
+    .restaurant {
+        h2 {
+            font-size: 30px;
+        }
+        .restaurant_card {
+            display: flex;
+    }
+    }
+}  
+
+@media screen and  (min-width: $tablet) and (max-width: $desktop) {
+    .restaurant {
+        h2 {
+            font-size: 30px;
+        }
+        .restaurant_card {
+            grid-template-columns: repeat(2, 1fr);                    
+        }
+    }
+}
+
+@media screen and  (min-width: $largedesktop) {
+    .restaurant {
+        h2 {
+            font-size: 30px;
+        }
+        .restaurant_card {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

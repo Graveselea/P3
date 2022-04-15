@@ -10,68 +10,85 @@
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
+
 @keyframes rotate1 {
   from {
     transform: rotate(-180deg); }
   to {
     transform: rotate(0); } }
+
 @keyframes bars {
   0% {
     transform: scaleY(0.5); }
   100% {
     transform: scaleY(1); } }
+
 @keyframes disappear {
   to {
     visibility: hidden; } }
+
+/* line 1, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/base/_base.scss */
 *,
 ::before,
 ::after {
   box-sizing: border-box;
   scroll-behavior: smooth; }
 
+/* line 7, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/base/_base.scss */
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif; }
+  /* line 10, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/base/_base.scss */
   body a {
     text-decoration: none; }
 
+/* line 14, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/base/_base.scss */
 section {
   padding: 0 20px; }
 
+/* line 1, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_header.scss */
 header {
   font-family: 'Shrikhand', cursive;
   text-align: center;
   box-shadow: 0px 5px 5px #cfcece;
   padding: 3px;
   position: relative; }
+  /* line 7, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_header.scss */
   header h1 {
     margin: 10px 0;
     font-size: 35px; }
+  /* line 11, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_header.scss */
   header a {
     color: #332d2c;
     text-decoration: none; }
 
+/* line 1, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_city.scss */
 .city {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #eaeaea;
   text-align: center; }
+  /* line 7, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_city.scss */
   .city i,
   .city h2 {
     margin: 20px 12px;
     font-size: 20px; }
 
+/* line 1, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
 .explorer {
   text-align: center;
   background-color: #f6f6f6;
   padding: 40px; }
+  /* line 5, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
   .explorer h2 {
     margin-top: 0;
     font-size: 25px; }
+  /* line 9, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
   .explorer p {
     font-size: 18px; }
 
+/* line 13, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
 button {
   background: linear-gradient(180deg, #e26fda 19%, #9c59dc 63%);
   font-size: 15px;
@@ -82,6 +99,7 @@ button {
   color: white;
   margin-bottom: 20px;
   box-shadow: 0px 4px 5px #d3d3d3; }
+  /* line 21, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/utils/_mixins.scss */
   button:hover {
     transform: scale(1.02);
     transition: all 100ms;
@@ -89,17 +107,55 @@ button {
     box-shadow: 0px 4px 5px grey;
     cursor: pointer; }
   @media screen and (min-width: 767px) {
+    /* line 13, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
     button {
       font-size: 20px; } }
 
+@media screen and (min-width: 767px) and (max-width: 959px) {
+  /* line 19, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer br {
+    display: none; }
+  /* line 22, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer h2 {
+    font-size: 30px; }
+  /* line 25, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer p {
+    font-size: 20px; } }
+
+@media screen and (min-width: 959px) and (max-width: 1599px) {
+  /* line 33, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer br {
+    display: none; }
+  /* line 36, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer h2 {
+    font-size: 30px; }
+  /* line 39, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer p {
+    font-size: 20px; } }
+
+@media screen and (min-width: 1600px) {
+  /* line 47, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer br {
+    display: none; }
+  /* line 50, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer h2 {
+    font-size: 30px; }
+  /* line 53, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_explorer.scss */
+  .explorer p {
+    font-size: 20px; } }
+
+/* line 2, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
 .fonctionnement {
   counter-reset: steps; }
+  /* line 4, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement h2 {
     margin: 45px 0px 15px 0; }
+  /* line 7, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement ol {
     display: flex;
     padding: 0 0 45px 0;
     flex-direction: column; }
+  /* line 12, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
   .fonctionnement li {
     font-weight: bold;
     background-color: #eaeaea;
@@ -110,6 +166,7 @@ button {
     box-shadow: 0px 4px 5px #d3d3d3;
     list-style-type: none;
     position: relative; }
+    /* line 22, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
     .fonctionnement li:hover {
       transform: scale(1.02);
       transition: all 100ms;
@@ -117,8 +174,10 @@ button {
       box-shadow: 0px 4px 5px grey;
       cursor: pointer;
       background-color: rgba(147, 86, 220, 0.2); }
+      /* line 25, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
       .fonctionnement li:hover i.fa-solid {
         color: #9356DC; }
+    /* line 29, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
     .fonctionnement li::before {
       content: "" counter(steps);
       counter-increment: steps;
@@ -134,22 +193,64 @@ button {
       top: 50%;
       transform: translateY(-50%);
       left: -10px; }
+    /* line 45, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
     .fonctionnement li i.fa-solid {
       color: grey;
       margin: 0 20px 0 10px;
       font-size: 20px; }
 
+@media screen and (min-width: 767px) and (max-width: 959px) {
+  /* line 55, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement h2 {
+    font-size: 30px; }
+  /* line 58, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement li {
+    font-size: 20px; }
+  /* line 61, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement ol {
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
+@media screen and (min-width: 959px) and (max-width: 1599px) {
+  /* line 70, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement h2 {
+    font-size: 30px; }
+  /* line 73, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement li {
+    font-size: 20px; }
+  /* line 76, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement ol {
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
+@media screen and (min-width: 1600px) {
+  /* line 86, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement h2 {
+    font-size: 30px; }
+  /* line 89, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement li {
+    font-size: 20px; }
+  /* line 92, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_fonctionement.scss */
+  .fonctionnement ol {
+    flex-wrap: wrap;
+    flex-direction: row; } }
+
+/* line 1, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
 .restaurant {
   padding-bottom: 20px;
   background-color: #f6f6f6; }
+  /* line 4, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
   .restaurant h2 {
     padding-top: 45px; }
+  /* line 7, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
   .restaurant h3,
   .restaurant p {
     margin-top: 10px;
     padding-left: 15px; }
+  /* line 12, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
   .restaurant p {
     margin: -15px 0 15px 0; }
+  /* line 16, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
   .restaurant .restaurant_card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -157,9 +258,11 @@ button {
     row-gap: 30px;
     flex-wrap: wrap;
     padding-bottom: 40px; }
+    /* line 24, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
     .restaurant .restaurant_card a {
       text-decoration: none;
       color: #332d2c; }
+    /* line 28, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
     .restaurant .restaurant_card .new {
       background-color: #99E2D0;
       color: #1b6150;
@@ -168,6 +271,7 @@ button {
       position: absolute;
       right: 20px;
       margin-top: 20px; }
+  /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
   .restaurant .card {
     background-color: white;
     flex-grow: 1;
@@ -175,12 +279,14 @@ button {
     border-radius: 15px;
     position: relative;
     box-shadow: 0px 4px 5px #d3d3d3; }
+    /* line 45, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
     .restaurant .card:hover {
       transform: scale(1.02);
       transition: all 100ms;
       opacity: 0.9;
       box-shadow: 0px 4px 5px grey;
       cursor: pointer; }
+    /* line 48, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
     .restaurant .card img {
       width: 100%;
       min-width: 300px;
@@ -188,15 +294,19 @@ button {
       object-fit: cover;
       border-radius: 15px 15px 0 0;
       object-position: center; }
+    /* line 56, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
     .restaurant .card i {
       position: absolute;
       margin-top: -12%;
       right: 5%;
       font-size: 25px; }
+    /* line 63, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
     .restaurant .card .fa-regular.fa-heart {
       opacity: 1; }
+      /* line 65, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
       .restaurant .card .fa-regular.fa-heart:hover {
         opacity: 0; }
+    /* line 69, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
     .restaurant .card .fa-solid.fa-heart {
       color: transparent;
       background: linear-gradient(360deg, #e26fda 0%, #9c59dc 41%);
@@ -204,72 +314,148 @@ button {
       -webkit-background-clip: text;
       opacity: 0;
       transition: opacity 0.5s ease-in-out; }
+      /* line 36, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/utils/_mixins.scss */
       .restaurant .card .fa-solid.fa-heart:hover {
         opacity: 1;
         transform: scale(1.02); }
+  /* line 73, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
   .restaurant .heartbox {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative; }
 
+@media screen and (min-width: 767px) and (max-width: 959px) {
+  /* line 85, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
+  .restaurant h2 {
+    font-size: 30px; }
+  /* line 88, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
+  .restaurant .restaurant_card {
+    display: flex; } }
+
+@media screen and (min-width: 959px) and (max-width: 1599px) {
+  /* line 96, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
+  .restaurant h2 {
+    font-size: 30px; }
+  /* line 99, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
+  .restaurant .restaurant_card {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (min-width: 1600px) {
+  /* line 107, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
+  .restaurant h2 {
+    font-size: 30px; }
+  /* line 110, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_restaurant.scss */
+  .restaurant .restaurant_card {
+    grid-template-columns: repeat(4, 1fr); } }
+
+/* line 1, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
 footer {
   background-color: #332d2c;
   color: white;
   display: flex;
   flex-direction: column;
   padding: 0 0 50px 25px; }
+  /* line 7, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
   footer h3 {
     font-family: 'Shrikhand', cursive; }
+  /* line 10, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
   footer a {
     color: white;
     padding: 4px 0 4px 0; }
+  /* line 14, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
   footer .footer_bold {
     font-weight: bold;
     margin-bottom: 10px; }
+  /* line 18, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
   footer i {
     width: 24px; }
 
+@media screen and (min-width: 959px) and (max-width: 1599px) {
+  /* line 25, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
+  footer {
+    flex-direction: row;
+    align-items: center; }
+    /* line 28, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
+    footer a {
+      padding: 0 10px;
+      margin: 0 10px; }
+    /* line 32, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
+    footer .footer_bold {
+      margin-bottom: 0; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
+      footer .footer_bold i {
+        margin-right: -40px; } }
+
+@media screen and (min-width: 1600px) {
+  /* line 44, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
+  footer {
+    flex-direction: row;
+    align-items: center; }
+    /* line 47, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
+    footer a {
+      padding: 0 10px;
+      margin: 0 10px; }
+    /* line 51, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
+    footer .footer_bold {
+      margin-bottom: 0; }
+      /* line 54, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/layout/_footer.scss */
+      footer .footer_bold i {
+        margin-right: -40px; } }
+
+/* line 1, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .header_page {
   box-shadow: none; }
+  /* line 3, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .header_page nav {
     display: flex;
     align-items: center;
     justify-content: flex-start; }
+    /* line 7, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
     .header_page nav h1 {
       font-size: 35px;
       margin-left: -45px; }
+    /* line 11, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
     .header_page nav #logo {
       margin: auto; }
+    /* line 14, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
     .header_page nav i {
       margin-left: 20px;
       font-size: 25px; }
 
+/* line 20, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .img_page {
   min-width: 100%;
   height: 350px;
   object-fit: cover;
   object-position: center; }
 
+/* line 27, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .menu_page {
   background-color: #eaeaea;
   border-radius: 50px 50px 0 0;
   margin-top: -90px;
   position: relative; }
+  /* line 32, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu_page h2 {
     font-family: 'Shrikhand', cursive;
-    padding: 40px 40px 40px 5px;
+    padding: 40px;
     position: relative;
     font-size: 30px; }
+  /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu_page .fa-heart {
     position: absolute;
     top: 49px;
     right: 50px;
     font-size: 25px; }
+  /* line 44, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu_page .fa-heart.fa-regular {
-    opacity: 1; }
+    opacity: 1;
+    color: #332d2c; }
+    /* line 47, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
     .menu_page .fa-heart.fa-regular:hover {
       opacity: 0; }
+  /* line 51, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu_page .fa-heart.fa-solid {
     color: transparent;
     background: linear-gradient(360deg, #e26fda 0%, #9c59dc 41%);
@@ -277,37 +463,51 @@ footer {
     -webkit-background-clip: text;
     opacity: 0;
     transition: opacity 0.5s ease-in-out; }
+    /* line 36, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/utils/_mixins.scss */
     .menu_page .fa-heart.fa-solid:hover {
       opacity: 1;
       transform: scale(1.02); }
+  /* line 54, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu_page .button_page {
     margin-top: 45px;
     text-align: center; }
+  /* line 59, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu_page button {
     padding: 15px 50px; }
 
+/* line 64, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .menu hr {
   border: 2px solid #99E2D0;
   width: 40px;
   margin: -8px 0 0 0; }
+
+/* line 69, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .menu .menu_resume {
   display: flex;
   margin-top: 20px;
   overflow: hidden;
   text-overflow: ellipsis; }
+  /* line 75, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu .menu_resume:hover .menu__description__check {
     margin-right: 0px; }
+  /* line 78, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu .menu_resume:hover .check_icon {
     animation: rotate1 .5s;
     animation-delay: 100ms; }
+
+/* line 85, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .menu .menu_cat {
   max-width: 100%;
   overflow: hidden;
   padding: 5px 5px 20px 5px; }
+
+/* line 90, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .menu .menu__description__itm {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+/* line 95, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .menu__description {
   box-shadow: 0px 4px 5px #d3d3d3;
   background-color: white;
@@ -320,26 +520,37 @@ footer {
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--1 {
     animation-delay: 150ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--2 {
     animation-delay: 250ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--3 {
     animation-delay: 350ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--4 {
     animation-delay: 450ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--5 {
     animation-delay: 550ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--6 {
     animation-delay: 650ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--7 {
     animation-delay: 750ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--8 {
     animation-delay: 850ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--9 {
     animation-delay: 950ms; }
+  /* line 108, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description--10 {
     animation-delay: 1050ms; }
+  /* line 112, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description h3,
   .menu__description p {
     color: #332d2c;
@@ -347,6 +558,7 @@ footer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+  /* line 120, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu__description .prix {
     font-weight: bold;
     margin-left: auto;
@@ -354,6 +566,8 @@ footer {
     margin-right: 20px;
     color: #332d2c;
     overflow: visible; }
+
+/* line 129, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
 .menu .menu__description__check {
   margin-right: -85px;
   min-width: 80px;
@@ -365,10 +579,32 @@ footer {
   border-radius: 0 15px 15px 0;
   transition: all 0.5s;
   color: white; }
+  /* line 140, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
   .menu .menu__description__check i.fa-solid.fa-circle-check {
     margin-bottom: 1px;
     font-size: 30px; }
 
+@media screen and (min-width: 959px) and (max-width: 1599px) {
+  /* line 150, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
+  .menu_page h2 {
+    font-size: 40px; }
+  /* line 153, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
+  .menu_page .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%; } }
+
+@media screen and (min-width: 1600px) {
+  /* line 164, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
+  .menu_page h2 {
+    font-size: 30px; }
+  /* line 167, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/pages/_subpages.scss */
+  .menu_page .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%; } }
+
+/* line 1, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
 .container {
   position: fixed;
   z-index: 1;
@@ -377,173 +613,96 @@ footer {
   opacity: 0.95;
   animation: disappear 2400ms ease-in-out;
   animation-fill-mode: forwards; }
+  /* line 9, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
   .container .load-contain {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 35vh; }
+  /* line 15, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
   .container .load {
     width: 250px;
     height: 100px;
     display: flex;
     justify-content: space-evenly;
     display: flex; }
+    /* line 21, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
     .container .load h1 {
       font-family: 'Shrikhand', cursive;
       font-size: 22px;
       text-align: center;
       color: white;
       padding-top: 20px; }
+    /* line 28, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
     .container .load__bar {
       background: linear-gradient(4deg, #ff79da 0%, #9356dc 41%);
       height: 100%;
       width: 25px;
       border-radius: 15px;
       animation: bars 1000ms backwards infinite ease-in-out alternate; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--1 {
         animation-delay: 125ms; }
+      /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--1-shadow {
         animation-delay: 125ms;
         background: linear-gradient(152deg, #ff79da 0%, #9356dc 41%);
         opacity: 0.5; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--2 {
         animation-delay: 250ms; }
+      /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--2-shadow {
         animation-delay: 250ms;
         background: linear-gradient(152deg, #ff79da 0%, #9356dc 41%);
         opacity: 0.5; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--3 {
         animation-delay: 375ms; }
+      /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--3-shadow {
         animation-delay: 375ms;
         background: linear-gradient(152deg, #ff79da 0%, #9356dc 41%);
         opacity: 0.5; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--4 {
         animation-delay: 500ms; }
+      /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--4-shadow {
         animation-delay: 500ms;
         background: linear-gradient(152deg, #ff79da 0%, #9356dc 41%);
         opacity: 0.5; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--5 {
         animation-delay: 625ms; }
+      /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--5-shadow {
         animation-delay: 625ms;
         background: linear-gradient(152deg, #ff79da 0%, #9356dc 41%);
         opacity: 0.5; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--6 {
         animation-delay: 750ms; }
+      /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--6-shadow {
         animation-delay: 750ms;
         background: linear-gradient(152deg, #ff79da 0%, #9356dc 41%);
         opacity: 0.5; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--7 {
         animation-delay: 875ms; }
+      /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--7-shadow {
         animation-delay: 875ms;
         background: linear-gradient(152deg, #ff79da 0%, #9356dc 41%);
         opacity: 0.5; }
+      /* line 35, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--8 {
         animation-delay: 1000ms; }
+      /* line 38, ../../../../../Volumes/GoogleDrive/Autres ordinateurs/Mon iMac/Documents/formation web/P3/css/sass/composants/_loader.scss */
       .container .load__bar--8-shadow {
         animation-delay: 1000ms;
         background: linear-gradient(152deg, #ff79da 0%, #9356dc 41%);
         opacity: 0.5; }
-
-@media screen and (min-width: 767px) and (max-width: 959px) {
-  .explorer br {
-    display: none; }
-  .explorer h2 {
-    font-size: 30px; }
-  .explorer p {
-    font-size: 20px; }
-
-  .fonctionnement h2 {
-    font-size: 30px; }
-  .fonctionnement li {
-    font-size: 20px; }
-  .fonctionnement ol {
-    flex-direction: row;
-    flex-wrap: wrap; }
-
-  .restaurant h2 {
-    font-size: 30px; }
-  .restaurant .restaurant_card {
-    display: flex; } }
-@media screen and (min-width: 959px) and (max-width: 1599px) {
-  .explorer br {
-    display: none; }
-  .explorer h2 {
-    font-size: 30px; }
-  .explorer p {
-    font-size: 20px; }
-
-  .fonctionnement h2 {
-    font-size: 30px; }
-  .fonctionnement li {
-    font-size: 20px; }
-  .fonctionnement ol {
-    flex-direction: row;
-    flex-wrap: wrap; }
-
-  .restaurant h2 {
-    font-size: 30px; }
-  .restaurant .restaurant_card {
-    grid-template-columns: repeat(2, 1fr); }
-
-  footer {
-    flex-direction: row;
-    align-items: center; }
-    footer a {
-      padding: 0 10px;
-      margin: 0 10px; }
-    footer .footer_bold {
-      margin-bottom: 0; }
-      footer .footer_bold i {
-        margin-right: -40px; }
-
-  .menu_page h2 {
-    font-size: 40px; }
-  .menu_page .menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5%; } }
-@media screen and (min-width: 1600px) {
-  .explorer br {
-    display: none; }
-  .explorer h2 {
-    font-size: 30px; }
-  .explorer p {
-    font-size: 20px; }
-
-  .fonctionnement h2 {
-    font-size: 30px; }
-  .fonctionnement li {
-    font-size: 20px; }
-  .fonctionnement ol {
-    flex-wrap: wrap;
-    flex-direction: row; }
-
-  .restaurant h2 {
-    font-size: 30px; }
-  .restaurant .restaurant_card {
-    grid-template-columns: repeat(4, 1fr); }
-
-  footer {
-    flex-direction: row;
-    align-items: center; }
-    footer a {
-      padding: 0 10px;
-      margin: 0 10px; }
-    footer .footer_bold {
-      margin-bottom: 0; }
-      footer .footer_bold i {
-        margin-right: -40px; }
-
-  .menu_page h2 {
-    font-size: 30px; }
-  .menu_page .menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5%; } }
 
 /*# sourceMappingURL=style.css.map */

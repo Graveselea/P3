@@ -50,3 +50,48 @@
     }
 }
 
+@media screen and  (min-width: $mobile) and (max-width: $tablet) {
+    .fonctionnement {   
+        h2 {
+            font-size: 30px;
+        }
+        li {
+            font-size: 20px;
+        }
+        ol {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and  (min-width: $tablet) and (max-width: $desktop) {
+        .fonctionnement {   
+        h2 {
+            font-size: 30px;
+        }
+        li {
+            font-size: 20px;
+        }
+        ol {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and  (min-width: $largedesktop) {
+
+    .fonctionnement {   
+        h2 {
+            font-size: 30px;
+        }
+        li {
+            font-size: 20px;
+        }
+        ol {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    } 
+}

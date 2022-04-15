@@ -14,3 +14,44 @@ button {
     @include button; 
     }
 
+    @media screen and  (min-width: $mobile) and (max-width: $tablet) {
+        .explorer {
+        br {
+            display: none;
+            }
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+    @media screen and  (min-width: $tablet) and (max-width: $desktop) {
+        .explorer {
+        br {
+            display: none;
+            }
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and  (min-width: $largedesktop) {
+    .explorer{
+    br {
+        display: none;
+        }
+     h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+}

@@ -19,3 +19,42 @@ footer {
             width: 24px;
         }
 }
+
+@media screen and  (min-width: $tablet) and (max-width: $desktop) {
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        a {
+            padding: 0 10px;
+            margin: 0 10px;
+        }
+        .footer_bold {
+            margin-bottom: 0;
+            
+            i {
+                margin-right: -40px;
+            }
+        }
+    }
+}
+
+@media screen and  (min-width: $largedesktop) {
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        a {
+            padding: 0 10px;
+            margin: 0 10px;
+        }
+        .footer_bold {
+            margin-bottom: 0;
+            
+            i {
+                margin-right: -40px;
+            }
+        }
+    }
+}
+
