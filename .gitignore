@@ -1,2 +1,2 @@
-*.json
-*.js
+# Ignore files called 'package.json'
+package.json
